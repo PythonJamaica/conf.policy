@@ -5,7 +5,7 @@
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
     xmlns:browser="http://namespaces.zope.org/browser"
     xmlns:plone="http://namespaces.plone.org/plone"
-    i18n_domain="ploneconf2016.policy">
+    i18n_domain="conf.policy">
 
   <five:registerPackage package="." initialize=".initialize" />
   <!-- Include configuration for dependencies listed in setup.py -->
@@ -17,15 +17,15 @@
 
   <!-- Publish static files -->
   <browser:resourceDirectory
-      name="ploneconf2016"
+      name="conf"
       directory="static"
       />
 
   <genericsetup:registerProfile
     name="default"
-    title="ploneconf2016.policy"
+    title="conf.policy"
     directory="profiles/default"
-    description="Installs the ploneconf2016.policy package"
+    description="Installs the conf.policy package"
     provides="Products.GenericSetup.interfaces.EXTENSION"
     />
   <!-- -*- extra stuff goes here -*- -->
@@ -35,7 +35,7 @@
       destination="1001"
       title="Add entries to css registry"
       description=""
-      profile="ploneconf2016.policy:default"
+      profile="conf.policy:default"
       import_steps="cssregistry"
       />
 
@@ -44,7 +44,7 @@
       destination="1002"
       title="Add Presentation view"
       description=""
-      profile="ploneconf2016.policy:default"
+      profile="conf.policy:default"
       import_steps="typeinfo"
       />
 
@@ -53,14 +53,14 @@
       destination="1003"
       title="Add Social media fields to Person type and view"
       description=""
-      profile="ploneconf2016.policy:default"
+      profile="conf.policy:default"
       import_steps="typeinfo"
       />
 
   <genericsetup:upgradeStep
       source="1003"
       destination="1004"
-      profile="ploneconf2016.policy:default"
+      profile="conf.policy:default"
       title="Migrate content to copy 'summary' into description"
       description=""
       handler=".setuphandlers.replace_summaries"
@@ -71,7 +71,7 @@
       destination="1005"
       title="Add custom presentation tile"
       description=""
-      profile="ploneconf2016.policy:default"
+      profile="conf.policy:default"
       import_steps="plone.app.registry"
       />
 

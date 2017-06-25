@@ -22,32 +22,57 @@
       <required>False</required>
       <title>Body</title>
     </field>
-    <field name="instructor" type="zope.schema.Set">
-      <description>Instructor</description>
-      <title>Instructor(s)</title>
+    <field name="speaker" type="zope.schema.Set">
+      <description>Speaker</description>
+      <title>Speaker</title>
       <value_type type="zope.schema.Choice">
-          <source>ploneconf2016.policy.content.vocabularies.persons</source>
+          <source>conf.policy.content.vocabularies.persons</source>
       </value_type>
     </field>
     <field name="duration" type="zope.schema.Choice">
       <description>Duration of presentation</description>
       <required>False</required>
       <title>Duration</title>
-      <source>ploneconf2016.policy.content.vocabularies.TRAINING_CLASS_DURATION_TYPES</source>
+      <source>conf.policy.content.vocabularies.PRESENTATION_DURATION_TYPES</source>
     </field>
     <field name="level" type="zope.schema.Choice">
       <description>Target Level</description>
       <required>False</required>
       <title>Level</title>
-      <source>ploneconf2016.policy.content.vocabularies.LEVEL_TYPES</source>
+      <source>conf.policy.content.vocabularies.LEVEL_TYPES</source>
     </field>
     <field name="audience" type="zope.schema.Set">
       <description>Target Audience</description>
       <required>False</required>
       <title>Audience</title>
       <value_type type="zope.schema.Choice">
-          <source>ploneconf2016.policy.content.vocabularies.AUDIENCE_TYPES</source>
+          <source>conf.policy.content.vocabularies.AUDIENCE_TYPES</source>
       </value_type>
+    </field>
+    <field name="slides_url" type="zope.schema.TextLine">
+      <description>URL of slides</description>
+      <title>Slides</title>
+      <required>False</required>
+    </field>
+    <field name="slides_embed" type="zope.schema.Text">
+      <description>Embed code for slides</description>
+      <title>Slides embed code</title>
+      <required>False</required>
+    </field>
+    <field name="video_url" type="zope.schema.TextLine">
+      <description>URL of video recording</description>
+      <title>Video</title>
+      <required>False</required>
+    </field>
+    <field name="video_embed" type="zope.schema.Text">
+      <description>Embed code for video recording</description>
+      <title>Video embed code</title>
+      <required>False</required>
+    </field>
+    <field name="schedule_url" type="zope.schema.TextLine">
+      <description>URL of this presentation on the schedule</description>
+      <title>Schedule</title>
+      <required>False</required>
     </field>
   </schema>
 </model>

@@ -4,7 +4,7 @@
  <stylesheet title="" authenticated="False" cacheable="True"
     compression="safe" conditionalcomment="" cookable="True" enabled="on"
     expression=""
-    id="++theme++ploneconf2016/ploneconf2016.css" media="" rel="stylesheet"
+    id="++theme++conf/conf.css" media="" rel="stylesheet"
     applyPrefix="true"
     />
 

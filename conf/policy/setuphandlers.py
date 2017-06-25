@@ -6,12 +6,12 @@ from Products.CMFCore.utils import getToolByName
 def replace_summaries(context):
     # Only run step if a flag file is present
     if getattr(context, 'getSite', None):
-        if context.readDataFile('ploneconf2016policy_marker.txt') is None:
+        if context.readDataFile('confpolicy_marker.txt') is None:
             return
-        logger = context.getLogger('ploneconf.policy')
+        logger = context.getLogger('conf.policy')
         site = context.getSite()
     else:
-        logger = logging.getLogger('ploneconf.policy')
+        logger = logging.getLogger('conf.policy')
         site = context
 
     catalog = getToolByName(site, 'portal_catalog')

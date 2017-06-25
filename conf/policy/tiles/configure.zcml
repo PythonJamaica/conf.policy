@@ -8,7 +8,7 @@
   <include package="plone.app.tiles" />
 
   <plone:tile
-    name="ploneconf2016.slidertile"
+    name="conf.slidertile"
     title="Slider"
     class=".slider.SliderTile"
     schema=".slider.ISliderTileSchema"
@@ -19,7 +19,7 @@
     />
 
   <plone:tile
-    name="ploneconf2016.presentationtile"
+    name="conf.presentationtile"
     title="Presentation"
     class=".presentation.PresentationTile"
     schema=".presentation.IPresentationTile"
@@ -30,7 +30,7 @@
     />
 
   <plone:tile
-    name="ploneconf2017.keynoters"
+    name="conf.keynoters"
     title="Keynoters"
     class=".keynoters.KeynotersTile"
     schema=".keynoters.IKeynotersTile"

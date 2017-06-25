@@ -10,15 +10,15 @@
     xmlns:i18n="http://namespaces.zope.org/i18n"
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
     xmlns:plone="http://namespaces.plone.org/plone"
-    i18n_domain="ploneconf2016.policy">
+    i18n_domain="conf.policy">
 
 </configure>
 
   <!-- Training Class -->
   <browser:page
       name="view"
-      for="ploneconf2016.policy.content.training_class.ITrainingClass"
-      class="ploneconf2016.policy.content.training_class.TrainingClassView"
+      for="conf.policy.content.training_class.ITrainingClass"
+      class="conf.policy.content.training_class.TrainingClassView"
       template="templates/training_class.pt"
       permission="zope2.View"
       />
@@ -26,8 +26,8 @@
   <!-- Person -->
   <browser:page
       name="view"
-      for="ploneconf2016.policy.content.person.IPerson"
-      class="ploneconf2016.policy.content.person.PersonView"
+      for="conf.policy.content.person.IPerson"
+      class="conf.policy.content.person.PersonView"
       template="templates/person.pt"
       permission="zope2.View"
       />
@@ -35,8 +35,8 @@
   <!-- Keynoter -->
   <browser:page
       name="view"
-      for="ploneconf2016.policy.content.keynoter.IKeynoter"
-      class="ploneconf2016.policy.content.keynoter.KeynoterView"
+      for="conf.policy.content.keynoter.IKeynoter"
+      class="conf.policy.content.keynoter.KeynoterView"
       template="templates/person.pt"
       permission="zope2.View"
       />
@@ -44,8 +44,8 @@
   <!-- Presentation -->
   <browser:page
       name="view"
-      for="ploneconf2016.policy.content.presentation.IPresentation"
-      class="ploneconf2016.policy.content.presentation.PresentationView"
+      for="conf.policy.content.presentation.IPresentation"
+      class="conf.policy.content.presentation.PresentationView"
       template="templates/presentation.pt"
       permission="zope2.View"
       />

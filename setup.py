@@ -3,7 +3,7 @@ import os
 
 version = '0.1'
 
-setup(name='ploneconf2016.policy',
+setup(name='conf.policy',
       version=version,
       description="Policy product for Plone Conference 2106 website",
       long_description=open("README.txt").read() + "\n" +
@@ -20,7 +20,7 @@ setup(name='ploneconf2016.policy',
       url='http://svn.plone.org/svn/collective/',
       license='GPL',
       packages=find_packages(exclude=['ez_setup']),
-      namespace_packages=['ploneconf2016'],
+      namespace_packages=['conf'],
       include_package_data=True,
       zip_safe=False,
       install_requires=[

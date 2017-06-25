@@ -4,9 +4,9 @@
 
   <record name="plone.app.tiles">
     <value purge="false">
-      <element>ploneconf2016.slidertile</element>
-      <element>ploneconf2016.presentationtile</element>
-      <element>ploneconf2017.keynoters</element>
+      <element>conf.slidertile</element>
+      <element>conf.presentationtile</element>
+      <element>conf.keynoters</element>
     </value>
   </record>
 
@@ -82,9 +82,9 @@
   </records>
   <!-- End Custom Row Formats -->
 
-  <records prefix="plone.app.mosaic.app_tiles.ploneconf2016_slidertile"
+  <records prefix="plone.app.mosaic.app_tiles.conf_slidertile"
            interface="plone.app.mosaic.interfaces.ITile">
-    <value key="name">ploneconf2016.slidertile</value>
+    <value key="name">conf.slidertile</value>
     <value key="label">Slider</value>
     <value key="category">media</value>
     <value key="tile_type">app</value>
@@ -131,9 +131,9 @@
     </value>
   </record>
 
-  <records prefix="plone.app.mosaic.app_tiles.ploneconf2016_presentationtile"
+  <records prefix="plone.app.mosaic.app_tiles.conf_presentationtile"
            interface="plone.app.mosaic.interfaces.ITile">
-    <value key="name">ploneconf2016.presentationtile</value>
+    <value key="name">conf.presentationtile</value>
     <value key="label">Presentation</value>
     <value key="category">advanced</value>
     <value key="tile_type">app</value>
@@ -145,9 +145,9 @@
     <value key="weight">70</value>
   </records>
 
-  <records prefix="plone.app.mosaic.app_tiles.ploneconf2017_keynoters"
+  <records prefix="plone.app.mosaic.app_tiles.conf_keynoters"
            interface="plone.app.mosaic.interfaces.ITile">
-    <value key="name">ploneconf2017.keynoters</value>
+    <value key="name">conf.keynoters</value>
     <value key="label">Keynoters</value>
     <value key="category">advanced</value>
     <value key="tile_type">app</value>
