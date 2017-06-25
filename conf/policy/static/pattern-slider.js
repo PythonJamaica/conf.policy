@@ -1,7 +1,7 @@
 require([
   'jquery',
   'mockup-patterns-base',
-  '++plone++conf/flexslider/jquery.flexslider'
+  '++resource++conf/flexslider/jquery.flexslider'
 ], function($, Base) {
   "use strict";
 
